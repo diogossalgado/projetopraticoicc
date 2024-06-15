@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Controle de Versões com Git</title>
+	<style>
+	body {
+		background-color: black; 
+		color: white; 
+		font-family: Arial, sans-serif;
+		padding-left: 20px; 
+	}
+	
+	a {
+		color: orange;
+		text-decoration: none;
+	}
+	
+	a:hover {
+		color: #df4c37; 
+	}
+	
+	code {
+		background-color: purple;
+		padding: 2px;
+	}
+	
+	</style>
+</head>
+<body>
+    <header>
+		<h1>
+			<span>
+				<img src=".\img\imagem1.jpg" alt="git_logo" width="28" height="28"> Controle de Versões com Git
+			</span>
+		</h1>
+    </header>
+	
+	<nav>
+        <ul>
+            <li><a href=".\audio.html">Página de Áudio</a></li>
+            <li><a href=".\video.html">Página de Vídeo</a></li>
+        </ul>
+    </nav>
+	
+	<p>
+	O Git é um <mark>sistema de controle de versões</mark> distribuído amplamente utilizado para rastrear as alterações 
+	em arquivos ao longo do tempo, ele permite que várias pessoas trabalhem em um mesmo projeto de forma colaborativa, mantendo um histórico 
+	detalhado de todas as alterações feitas em cada arquivo. Cada usuário tem uma cópia completa do repositório, 
+	o que facilita o trabalho offline e torna o Git extremamente rápido e eficiente, mesmo para projetos grandes. 
+	<br><br>Com o Git, é possível ramificar o projeto em diferentes linhas de desenvolvimento, experimentar novas funcionalidades 
+	sem comprometer o código principal e facilmente mesclar as alterações de volta ao ramo principal quando estiverem prontas. 
+	Além disso, o Git oferece recursos avançados de gerenciamento de conflitos e recuperação de versões anteriores, 
+	o que garante a integridade e a segurança dos dados do projeto. <br><br>
+	</p>
+    <section>
+        <h2>Comandos Git</h2>
+        <table>
+            <tr>
+   
+             <th>Comando</th>
+                <th>Descrição</th>
+            </tr>
+            <tr>
+                <td>git init</td>
+                <td><i>Inicializa um repositório Git em um diretório.</i></td>
+            </tr>
+            <tr>
+                <td>git clone</td>
+                <td><i>Clona um repositório Git existente para o seu sistema local.</i></td>
+            </tr>
+            <tr>
+                <td>git branch</td>
+                <td><i>List, cria ou exclui branches.</i></td>
+            </tr>
+            <tr>
+                <td>git checkout</td>
+                <td><i>Move o HEAD para um branch ou ponto específico na história.</i></td>
+            </tr>
+            <tr>
+                <td>git status</td>
+                <td><i>Exibe o status das alterações no repositório.</i></td>
+            </tr>
+            <tr>
+                <td>git diff</td>
+                <td><i>Exibe as diferenças entre arquivos no repositório.</i></td>
+            </tr>
+            <tr>
+                <td>git add</td>
+                <td><i>Adiciona alterações ao índice para prepará-las para o commit.</i></td>
+            </tr>
+            <tr>
+                <td>git commit</td>
+                <td><i>Registra as alterações no repositório.</i></td>
+            </tr>
+            <tr>
+                <td>git push</td>
+                <td><i>Envia alterações locais para um repositório remoto.</i></td>
+            </tr>
+            <tr>
+                <td>git pull</td>
+                <td><i>Atualiza o repositório local com as alterações do repositório remoto.</i></td>
+            </tr>
+            <tr>
+                <td>git revert</td>
+                <td><i>Desfaz uma ou mais alterações em um commit específico.</i></td>
+            </tr>
+            <tr>
+                <td>git merge</td>
+                <td><i>Combina o histórico de dois branches diferentes.</i></td>
+            </tr>
+            <tr>
+                <td>git stash</td>
+                <td><i>Guarda temporariamente alterações não finalizadas.</i></td>
+            </tr>
+            <tr>
+                <td>git rm</td>
+                <td><i>Remove arquivos do controle de versão.</i></td>
+            </tr>
+            <tr>
+                <td>git config</td>
+                <td><i>Configuração do Git, como nome de usuário e email.</i></td>
+            </tr>
+            <tr>
+                <td>git reset</td>
+                <td><i>Desfaz alterações no índice ou no diretório de trabalho para um commit específico.</i></td>
+            </tr>
+            <tr>
+                <td>git remote</td>
+                <td><i>Gerencia repositórios remotos.</i></td>
+            </tr>
+            <tr>
+                <td>git fetch</td>
+                <td><i>Busca alterações de um repositório remoto.</i></td>
+            </tr>
+            <tr>
+                <td>git show</td>
+                <td><i>Exibe informações sobre um commit específico ou objeto.</i></td>
+            </tr>
+            <tr>
+                <td>git help</td>
+                <td><i>Exibe a documentação de ajuda para um comando específico.</i></td>
+            </tr>
+            <tr>
+                <td>git rebase</td>
+                <td><i>Aplica commits de um branch em outro.</i></td>
+            </tr>
+            <tr>
+                <td>git blame</td>
+                <td><i>Exibe a última alteração em cada linha de um arquivo.</i></td>
+            </tr>
+            <tr>
+                <td>git tag</td>
+                <td><i>Marca pontos específicos na história do repositório.</i></td>
+            </tr>
+        </table>
+    </section>
+	
+	<br>
+	<h3>Configuração e acesso ao repositório Git:</h3>
+
+	<ul>
+	  <li>
+		<p><strong>Criando um novo repositório:</strong></p>
+		<ul>
+		  <li>Navegue até o diretório do seu projeto local onde deseja iniciar o repositório Git.</li>
+		  <li>Inicialize um novo repositório Git localmente com o seguinte comando:</li>
+		  <li><code>git init</code></li>
+		  <li>Isso criará um novo diretório `.git` localmente, que é onde o Git armazena seus metadados e configurações para o repositório.</li>
+		</ul>
+	  </li>
+	  
+	  <li>
+		<p><strong>Adicionar arquivos ao repositório:</strong></p>
+		<ul>
+		  <li>Coloque seus arquivos no diretório do projeto que você iniciou.</li>
+		  <li>Adicione os arquivos ao stage do Git usando o comando <code>git add</code> seguido do nome do arquivo ou <code>git add .</code> para adicionar todos os arquivos modificados e novos.</li>
+		  <li>Exemplo: <code>git add arquivo.txt</code></li>
+		</ul>
+	  </li>
+	  
+	  <li>
+		<p><strong>Confirmar e enviar para o repositório:</strong></p>
+		<ul>
+		  <li>Para registrar as alterações feitas nos arquivos, execute o comando <code>git commit -m "mensagem do commit"</code> para confirmar as alterações.</li>
+		  <li>Exemplo: <code>git commit -m "Primeiro commit"</code></li>
+		  <li>No GitHub, crie um novo repositório. Copie o URL do repositório que você acabou de criar.</li>
+		  <li>Conecte seu repositório local ao repositório remoto no GitHub usando o comando <code>git remote add origin URL_REPOSITORIO</code>.</li>
+		  <li>Exemplo: <code>git remote add origin https://github.com/username/nomerepositorio.git</code></li>
+		  <li>Finalmente, envie suas alterações para o repositório remoto usando o comando <code>git push -u origin master</code>.</li>
+		  <li>Exemplo: <code>git push -u origin master</code></li>
+		  <li>Isso enviará os arquivos do seu repositório local para o repositório remoto no GitHub.</li>
+		</ul>
+	  </li>
+	</ul>
+	
+	<h4>Utilização do Github na construção desse projeto:</h4>
+	<p>
+		Utilizei o GitHub no projeto para criar e enviar esta página HTML. 
+		Após finalizar o desenvolvimento, fiz um commit dos arquivos modificados e usei o comando <code>git push</code> para 
+		enviar as alterações para o repositório remoto. 
+		Não foram necessárias mais alterações após o envio, pois o projeto estava completo e pronto para ser compartilhado.
+	</p>
+
+    <footer>
+        <p> <small> <b> Arquivo criado no dia 12/06/2024 </b> </small> </p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Página com Vídeo</title>
+	<style>
+	  body {
+		background-color: black; /* Define o fundo preto */
+		color: white; /* Define a cor do texto como branco */
+		font-family: Arial, sans-serif; /* Define uma fonte padrão */
+		padding: 20px; /* Adiciona um padding para afastar o conteúdo das bordas */
+		text-align: center; /* Centraliza o conteúdo horizontalmente */
+	  }
+	  
+	  video {
+		width: 80%; /* Define a largura do vídeo como 80% da largura da página */
+		display: block; /* Remove margens e espaçamentos extras */
+		margin: 0 auto; /* Centraliza o vídeo horizontalmente */
+	  }
+	  
+	  button {
+		margin-top: 20px; /* Espaço acima do botão */
+		padding: 10px 20px; /* Espaçamento interno do botão */
+		background-color: orange; /* Cor de fundo do botão */
+		color: white; /* Cor do texto do botão */
+		font-weight: bold; /* Define o peso da fonte como negrito */
+		border-radius: 20px; /* Arredonda as bordas do botão */
+		border: none; /* Remove a borda do botão */
+		cursor: pointer; /* Mostra um cursor ao passar o mouse sobre o botão */
+	  }
+	</style>
+</head>
+<body>
+
+<video controls>
+  <source src="./video/video1.mp4" type="video/mp4">
+  Seu navegador não suporta o elemento de vídeo.
+</video>
+
+<button onclick="window.location.href='index.html'">Voltar para página principal</button>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Página com Áudio</title>
+	<style>
+	  body {
+		background-color: black; /* Define o fundo preto */
+		color: white; /* Define a cor do texto como branco */
+		font-family: Arial, sans-serif; /* Define uma fonte padrão */
+		padding-top:20%; /* Adiciona um padding para afastar o conteúdo das bordas */
+		text-align: center; /* Centraliza o conteúdo horizontalmente */
+	  }
+	  
+	  audio {
+		width: 50%; 
+		display: block; /* Remove margens e espaçamentos extras */
+		margin: 0 auto; /* Centraliza o áudio horizontalmente */
+	  }
+	  
+	  button {
+		margin-top: 20px;
+		padding: 10px 20px;
+		background-color: orange; 
+		color: white;
+		font-weight: bold;
+		border-radius: 20px; 
+		border-color: orange;
+		cursor: pointer; 
+	  }
+	</style>
+</head>
+<body>
+
+<audio controls>
+  <source src="./audio/audio1.mp3" type="audio/mpeg">
+</audio>
+
+<button onclick="window.location.href='index.html'">Voltar para página principal</button>
+
+</body>
+</html>
